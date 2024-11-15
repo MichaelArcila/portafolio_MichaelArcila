@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  background-color: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+section {
+  padding: 30px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+
+p {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Botón interactivo */
+.custom-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+.custom-btn:hover{
+  background-color: #14255a;
+  -webkit-box-shadow: -1px 4px 24px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 4px 24px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 4px 24px -3px rgba(0, 0, 0, 0.75);
+}
+
+
+
+body {
+  background-image: url('./components/cuasares.jpg');
+  background-size: cover;
+  background-position: center;
+  filter:brightness(50%);
+}

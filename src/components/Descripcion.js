@@ -1,17 +1,19 @@
-    import React from 'react';
+import React from 'react';
 
-    const Descripcion = () => {
-    return (
-        <section>
-        <h2>Sobre mí</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta sem eget neque sodales faucibus. 
-            Curabitur eget leo ut turpis porttitor dictum convallis porta ligula. Proin feugiat nisi orci, ac placerat metus dapibus at. 
-            Vivamus in ex mattis tortor maximus commodo eu non augue. Nullam dignissim est ac mauris rutrum, eget lacinia tellus sodales. 
-            Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin id imperdiet massa. Proin tincidunt sagittis purus, eu mattis ante imperdiet eget.
-            Etiam sodales turpis in erat suscipit rutrum ac vitae lacus. 
-            Nunc in quam condimentum, faucibus metus in, porta sapien. Praesent ornare dictum laoreet.</p>
-        </section>
-    );
-    };
+const Descripcion = () => {
+  return (
+    <section>
+      <h2>Sobre mí</h2>
+      <p>
+        Mi nombre es Michael Arcila Ibañez, tengo 17 años. Terminé el colegio a la edad de los 16 años y actualmente estoy por terminar
+        el segundo semestre de la universidad. <br />
+        Dicha universidad es el Pascual Bravo y me encuentro estudiando Tecnología en Desarrollo de Software. <br /> <br /> 
+        Me gusta todo lo relacionado con la tecnología, los videojuegos, jugar fútbol, hablar con amigos, la astronomía
+        y escuchar música. <br /> 
+        Tengo 4 hermanas y una familia que me apoya mucho. 
+      </p>
+    </section>
+  );
+};
 
-    export default Descripcion;
+export default Descripcion;

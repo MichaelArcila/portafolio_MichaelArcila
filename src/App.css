@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
-  background-color: #f0f0f0;
+  background-image: url('./components/cuasares.jpg'); 
+  background-size: cover;
+  background-position: center;
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
@@ -18,7 +20,6 @@ body {
   margin: 0 auto;
 }
 
-
 section {
   padding: 30px;
   margin: 20px 0;
@@ -29,7 +30,6 @@ section {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 h2 {
   color: #333;
   font-size: 28px;
@@ -37,7 +37,6 @@ h2 {
   font-weight: 600;
   transition: color 0.3s ease;
 }
-
 
 p {
   color: #555;
@@ -47,13 +46,12 @@ p {
   margin: 0 auto 20px;
 }
 
-
 section:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Botón interactivo */
+
 .custom-btn {
   padding: 10px 20px;
   font-size: 16px;
@@ -63,21 +61,45 @@ section:hover {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  
 }
 
-.custom-btn:hover{
-  background-color: #14255a;
-  -webkit-box-shadow: -1px 4px 24px -3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 4px 24px -3px rgba(0, 0, 0, 0.75);
+.custom-btn:hover {
+  background-color: #6b7592;
   box-shadow: -1px 4px 24px -3px rgba(0, 0, 0, 0.75);
 }
 
 
+.image-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: none; 
+}
 
-body {
-  background-image: url('./components/cuasares.jpg');
-  background-size: cover;
-  background-position: center;
-  filter:brightness(50%);
+.image-container img {
+  width: 200px; 
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.image-container.active {
+  display: block; 
+}
+
+.custom-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #6b7592;
 }
